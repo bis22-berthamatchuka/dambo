@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Background Changer</title>
+  <script>
+    let colors = ["lightblue", "lightgreen", "lightpink", "lightyellow"];
+    let index = 0;
+
+    function changeBackground() {
+      document.body.style.backgroundColor = colors[index];
+      index = (index + 1) % colors.length; // cycle through colors
+    }
+
+    setInterval(changeBackground, 10000); // every 10 seconds
+  </script>
+</head>
+<body>
+  <h1>The background changes every 10 seconds</h1>
+</body>
+</html>
